@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Family Tree | Gia Phả Gia Đình</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Six Generations • Sáu Đời</p>
+      <h1>Our Family Tree</h1>
+      <h2>Gia Phả Gia Đình</h2>
+      <p class="subtitle">
+        Preserving our family names, photos, and relationships.<br>
+        Lưu giữ tên, hình ảnh và mối quan hệ của gia đình.
+      </p>
+    </div>
+
+    <div class="controls">
+      <button id="zoomOut" aria-label="Zoom out">−</button>
+      <button id="resetZoom">Reset / Đặt lại</button>
+      <button id="zoomIn" aria-label="Zoom in">+</button>
+    </div>
+  </header>
+
+  <main class="tree-shell">
+    <p class="tree-hint">
+      Drag left or right to explore • Kéo sang trái hoặc phải để xem cây gia đình
+    </p>
+
+    <div class="tree-viewport" id="treeViewport">
+      <div class="tree-canvas" id="treeCanvas">
+
+        <section class="generation">
+          <h2>Generation 1 <span>Đời 1</span></h2>
+          <div class="generation-row">
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Great-Great-Great Grandfather<br><strong>Cụ ông đời thứ nhất</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <div class="marriage-line" aria-hidden="true"></div>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Great-Great-Great Grandmother<br><strong>Cụ bà đời thứ nhất</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+          </div>
+          <div class="down-line"></div>
+        </section>
+
+        <section class="generation">
+          <h2>Generation 2 <span>Đời 2</span></h2>
+          <div class="generation-row">
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Great-Great Grandfather<br><strong>Cụ ông</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <div class="marriage-line"></div>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Great-Great Grandmother<br><strong>Cụ bà</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+          </div>
+          <div class="down-line"></div>
+        </section>
+
+        <section class="generation">
+          <h2>Generation 3 <span>Đời 3</span></h2>
+          <div class="generation-row">
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Great Grandfather<br><strong>Ông cố</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <div class="marriage-line"></div>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Great Grandmother<br><strong>Bà cố</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+          </div>
+          <div class="down-line"></div>
+        </section>
+
+        <section class="generation">
+          <h2>Generation 4 <span>Đời 4</span></h2>
+          <div class="generation-row multi">
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Grandfather<br><strong>Ông</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Grandmother<br><strong>Bà</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+          </div>
+          <div class="down-line"></div>
+        </section>
+
+        <section class="generation">
+          <h2>Generation 5 <span>Đời 5</span></h2>
+          <div class="generation-row multi">
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Father<br><strong>Cha / Ba</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Mother<br><strong>Mẹ</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Uncle / Aunt<br><strong>Chú / Bác / Cô / Dì / Cậu</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+          </div>
+          <div class="down-line"></div>
+        </section>
+
+        <section class="generation">
+          <h2>Generation 6 <span>Đời 6</span></h2>
+          <div class="generation-row multi">
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Son / Daughter<br><strong>Con trai / Con gái</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Spouse<br><strong>Vợ / Chồng</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+
+            <article class="person-card">
+              <div class="photo-slot"><span>Add Photo<br>Thêm hình</span></div>
+              <h3>Full Name / Họ tên</h3>
+              <p>Cousin / Sibling<br><strong>Anh chị em / Anh chị em họ</strong></p>
+              <button class="details-btn">View Details / Xem chi tiết</button>
+            </article>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="modal" id="personModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close-btn" id="closeModal">×</button>
+      <div class="modal-photo">Photo / Hình</div>
+      <h2 id="modalName">Full Name / Họ tên</h2>
+      <p><strong>Relationship / Vai vế:</strong> Add relationship here</p>
+      <p><strong>Born / Năm sinh:</strong> —</p>
+      <p><strong>Place / Nơi sinh sống:</strong> —</p>
+      <p><strong>Notes / Ghi chú:</strong> Add family story or information here.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
